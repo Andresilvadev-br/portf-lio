@@ -1,0 +1,64 @@
+/* ----- HERO WRAPPER ----- */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+    background-color: #0d1117; /* fundo escuro elegante */
+    position: relative;
+}
+
+/* ----- FOTO / AVATAR ----- */
+.hero-image img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #ff4b6e; /* borda rosada igual ao modelo */
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(255, 75, 110, 0.5);
+    transition: transform .3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.06);
+}
+
+/* ----- SUBTÍTULO ("Hello World") ----- */
+.hero-subtitle {
+    font-size: 1.1rem;
+    margin-top: 22px;
+    opacity: 0.85;
+}
+
+.hero-subtitle span {
+    color: #ff4b6e;
+    font-weight: 600;
+}
+
+/* ----- TÍTULO PRINCIPAL ----- */
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 8px;
+    font-family: "Archivo", sans-serif;
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* ----- DESCRIÇÃO ----- */
+.hero-description {
+    margin-top: 18px;
+    max-width: 650px;
+    line-height: 1.6;
+    opacity: 0.85;
+    font-size: 1rem;
+}
